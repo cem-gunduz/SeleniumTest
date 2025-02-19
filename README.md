@@ -2,6 +2,7 @@
 Trendyol test with selenium
 Öncelikle bir java projesi oluşturuldu. Daha sonra chrome da çalışıldığı için chrome driver dosyası indirilip projemizin resources dosyasına atıldı.
 Sonrasında pom dosyası içine selenium-java gibi gerekli dependencyler eklendi.
+
 1.koşul SearchFunctionally
 Kod önce trenyol sitesine girer. Ardından "kablosuz kulaklik" adındaki ürünü arar.
 Arama sonucunda alttaki barda aranan ürün ile çıkan ürünler karşılaştırılır ve doğruysa "Arama sonucu doğru"
