@@ -1,21 +1,19 @@
 # SeleniumTest
-Trendyol test with selenium
-Öncelikle bir java projesi oluşturuldu. Daha sonra chrome da çalışıldığı için chrome driver dosyası indirilip projemizin resources dosyasına atıldı.
-Sonrasında pom dosyası içine selenium-java gibi gerekli dependencyler eklendi.
+Trendyol test project create with selenium. Firstly I create java project then I downloaded chrome driver file because I use chrome then I added required dependencies like selenium-java in pom.xml file.
 
-1.koşul SearchFunctionally
-Kod önce trenyol sitesine girer. Ardından "kablosuz kulaklik" adındaki ürünü arar.
-Arama sonucunda alttaki barda aranan ürün ile çıkan ürünler karşılaştırılır ve doğruysa "Arama sonucu doğru"
-yanlış ise "Arama sonucu yanlış" yazdırılır.
+1.Case SearchFunctionally
+Code start to open trendyol website. Then code search product name of "kablosuz kulaklik".
+As a result of the search, the products searched for in the lower bar are compared with the products found and If it is true: "Arama sonucu doğru", search result is :"Arama sonucu yanlış".
+If it is wrong,search result is :"Arama sonucu yanlış"
 
-2. Koşul ProductSelection tamamlanmadı.
-Kod trenyol sitesini açar. Ardından "kablosuz kulaklik" adındaki ürünü arar.
-Çıkan ürünlerden ikincinin adını birinci ve ikinci adını alır ardında fiyuatını alır.
-Daha sonra ürüne girer. Alınan ürünün tam adını ve üretini yazdırır.
-Buarada iknici sayfadaki isimle karşılaştırma kısmındaki hatalar giderilemedi.
+2. Case ProductSelection
+Code start to open trendyol website. Then code search product name of "kablosuz kulaklik".
+Then Take name and price of second product
+Then enter product. Prints the full name and price of selected product.
+By the way, the errors in the comparison with the name on the second page could not be fixed.
 
-3.Koşul AddToCart
-Kod trenyol sitesini açar. Ardından "kablosuz kulaklik" adındaki ürünü arar.
-İlk ürün açılır. Ardında 2 saniye beklenir. Açılan ürün sepete eklenir. Sonra sepet sayfasına gidilir ve ürün eklenmişmi diye kontrol edilir.
-Eklenmmiş ise "Ürün sepete başarıyla eklendi" yazdırılır.
-Eklenmediyse "Ürün sepete eklenemedi" yazdırılır.
+3.Case AddToCart
+Code start to open trendyol website. Then code search product name of "kablosuz kulaklik".
+First product opens. Then wait 2 seconds. Opened product is added to the cart. Then go to the cart page and check if the product has been added.
+If cart has product, result is : "Ürün sepete başarıyla eklendi"
+If cart hasn't product,result is : "Ürün sepete eklenemedi".
